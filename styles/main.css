@@ -25,5 +25,49 @@
     font-family: 'Readex Pro';
     line-height: 1.5em;
     box-sizing: border-box;
-    color: var(--mainTextColor-light);
+    color: var(--mainTextColor-dark);
+}
+
+body{
+    background-color: var(--mainBgColor);
+}
+
+p, span, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-size: 500;
+}
+
+li{
+    line-height: 1.9em;
+}
+
+#container--main{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section--page{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#wrapper--hero{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#username{
+    font-size: 3em;
+    line-height: 1em;
+}
+
+#bio, a{
+    font-weight: 300;
 }
