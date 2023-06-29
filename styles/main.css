@@ -71,3 +71,35 @@ li{
 #bio, a{
     font-weight: 300;
 }
+
+#profile-pic{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#email{
+    color: var(--mainTextColor);
+}
+
+#social--list{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#social--list a{
+    font-size: 0.9em;
+    color: var(--secondaryTextColor);
+    transition: 0.3s;
+}
+
+#social--list a:hover{
+    color: var(--mainLinkColor);
+}
+
+#qualification--list{
+    list-style: none;
+}
