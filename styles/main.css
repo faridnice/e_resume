@@ -21,15 +21,17 @@
 
 }
 
+
 *{
     font-family: 'Readex Pro';
     line-height: 1.5em;
     box-sizing: border-box;
-    color: var(--mainTextColor-dark);
+    color: var(--mainTextColor);
+    
 }
 
 body{
-    background-color: var(--mainBgColor);
+    background-color: var(--mainBgColor);            
 }
 
 p, span, li{
@@ -40,7 +42,7 @@ p, span, li{
 a{
     text-decoration: none;
     color: var(--mainLinkColor);
-    font-size: 500;
+    font-weight: 500;
 }
 
 li{
@@ -50,6 +52,7 @@ li{
 #container--main{
     max-width: 700px;
     margin: 0 auto;
+    padding: 1em;
 }
 
 .section--page{
@@ -63,43 +66,118 @@ li{
     gap: 4em;
 }
 
-#username{
-    font-size: 3em;
-    line-height: 1em;
-}
-
 #bio, a{
     font-weight: 300;
 }
 
+#user-name{
+    font-size: 48px;
+    line-height: 1em;
+}
+
 #profile-pic{
-    border-radius: 50%;
     width: 150px;
     height: 150px;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 #email{
     color: var(--mainTextColor);
 }
 
-#social--list{
+#socials--list{
     display: flex;
     justify-content: space-between;
     column-gap: 1em;
     flex-wrap: wrap;
 }
 
-#social--list a{
-    font-size: 0.9em;
+#socials--list a{
+    font-weight: 300;
     color: var(--secondaryTextColor);
+    font-size: 0.9em;
     transition: 0.3s;
 }
 
-#social--list a:hover{
+#socials--list a:hover{
+    font-weight: 100;
     color: var(--mainLinkColor);
+    font-size: 0.9em;
 }
 
-#qualification--list{
+#qualifications--list{
     list-style: none;
+}
+
+#wrapper--techstack__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack{
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+}
+
+.card--project{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--mainBorderColor);
+}
+
+.card--project a{
+    color: var(--mainTextColor);
+
+    transition: 0.3s;
+}
+
+.card--project a:hover{
+    color: rgb(30, 190,214);
+
+}
+
+.card--work-history{
+    border-left: 1px solid var(--mainBorderColor);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
+
+.line-break{
+    background-color: var(--mainBorderColor);
+    height: 1px;
+}
+
+
+@media(max-width:600px){
+
+    .section--page{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #wrapper--hero{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+    #profile-pic{
+        width: 200px;
+        height: 200px;
+    }
+
+    #wrapper--hero{
+        flex-direction: column;
+    }
+
+    .card--work-history{
+        border-left: none;
+        padding-left: 0;
+    }
 }
