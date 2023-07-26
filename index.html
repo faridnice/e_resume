@@ -13,21 +13,21 @@
 </head>
 <body>
     
-    <!-- Testing top navbar -->
+    <!-- Top navbar -->
     <nav id="navbar-top" class="navbar bg-body-tertiary px-3 mb-3">
         <a class="navbar-brand" href="#"></a>
         <ul class="nav nav-pills">
             <li class="nav-item">
-                <a href="#scrollspyHeading1" class="nav-link">Skills</a>
+                <a href="#scrollspySkills" class="nav-link">Skills</a>
             </li>
             <li class="nav-item">
-                <a href="#scrollspyHeading2" class="nav-link">Tech Stack</a>
+                <a href="#scrollspyTech" class="nav-link">Tech Stack</a>
             </li>
             <li class="nav-item">
-                <a href="#scrollspyHeading2" class="nav-link">Work History</a>
+                <a href="#scrollspyWorkHistory" class="nav-link">Work History</a>
             </li>
             <li class="nav-item">
-                <a href="#scrollspyHeading2" class="nav-link">Projects</a>
+                <a href="#scrollspyProjects" class="nav-link">Projects</a>
             </li>
         </ul>
     </nav>
@@ -53,7 +53,7 @@
             </div>
         </section>
 
-        <section class="section--page">
+        <section class="section--page" id="scrollspySkills">
 
             <h3>Skills and Qualifications</h3>
             <ul id="qualification--list">
@@ -64,7 +64,7 @@
 
         </section>
 
-        <section class="section--page">
+        <section class="section--page" id="scrollspyTech">
 
             <h3>Tech Stack</h3>
             <div id="wrapper--techstack__items">
@@ -84,22 +84,11 @@
 
         </section>
 
-        <section id="work-history-wrapper" class="section--page">
+        <section id="work-history-wrapper" class="section--page" >
 
-            <h3>Work History</h3>
-
-            <div class="line--break"></div>
-
-            <div class="card--work--history">
-                <strong>DEVELOPER ADVOCATE | AGODA.COM</strong>
-                <p>11/2023 - Present</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequuntur quae fuga, inventore eos amet ab debitis, laboriosam, dolores dolorem sunt odio itaque enim hic. Labore facere quos blanditiis quidem!</p>
-                <ul>
-                    <li>Achievement during work</li>
-                    <li>Achievement during work</li>
-                    <li>Achievement during work</li>
-                </ul>
-            </div>
+            <div id="scrollspyWorkHistory">
+            
+                <h3>Work History</h3>
 
             <div class="line--break"></div>
 
@@ -127,9 +116,22 @@
                 </ul>
             </div>
 
+            <div class="line--break"></div>
+
+            <div class="card--work--history">
+                <strong>DEVELOPER ADVOCATE | AGODA.COM</strong>
+                <p>11/2023 - Present</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequuntur quae fuga, inventore eos amet ab debitis, laboriosam, dolores dolorem sunt odio itaque enim hic. Labore facere quos blanditiis quidem!</p>
+                <ul>
+                    <li>Achievement during work</li>
+                    <li>Achievement during work</li>
+                    <li>Achievement during work</li>
+                </ul>
+            </div>
+            </div>
         </section>
 
-        <section class="section--page">
+        <section class="section--page" id="scrollspyProjects">
 
             <h3>Projects & Accomplishments</h3>
 
@@ -203,12 +205,41 @@
               </div>
 
         </section>
-
-        <section class="footer">
-
-        </section>
-
     </div>
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+
+    <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="https://faridnice.github.io/e_resume/">farid.dev</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+    
+  </div>
+  <!-- End of .container -->
 
 </body>
 </html>
